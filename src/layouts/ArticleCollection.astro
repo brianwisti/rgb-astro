@@ -1,0 +1,10 @@
+---
+import MarkdownPage from "layout:MarkdownPage";
+
+let { content } = Astro.props;
+---
+<MarkdownPage content={content}>
+This is where you'd see a list of articles I know about.
+
+<slot />
+</MarkdownPage>

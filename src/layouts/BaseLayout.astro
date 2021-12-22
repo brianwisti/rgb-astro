@@ -1,0 +1,19 @@
+---
+import Masthead from "component:Masthead.astro";
+import PageMeta from "component:PageMeta.astro";
+
+const { content } = Astro.props;
+---
+<html lang="en">
+<head>
+    <PageMeta content={content} />
+</head>
+<body>
+    <main>
+        <Masthead />
+        <div>
+            <slot />
+        </div>
+    </main>
+</body>
+</html>

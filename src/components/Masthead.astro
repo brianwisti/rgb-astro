@@ -1,0 +1,26 @@
+---
+import SiteMenu from "component:SiteMenu.astro";
+---
+<style>
+    header {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    header img {
+        width: 2em;
+        height: 2.667em;
+    }
+    div {
+        font-size: clamp(2rem, -0.4742rem + 6.1856vw, 2.75rem);
+    }
+    h1 {
+        font-size: 1em;
+        font-weight: 500;
+    }
+</style>
+<header>
+    <div>
+        <h1><a href="/">Random Geekery</a></h1>
+    </div>
+    <SiteMenu />
+</header>

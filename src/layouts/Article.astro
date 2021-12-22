@@ -1,0 +1,22 @@
+---
+import MarkdownPage from "layout:MarkdownPage";
+
+const { content } = Astro.props;
+---
+<MarkdownPage content={content}>
+    <article>
+        <slot name="article-header">
+            <header>
+                <h1>{content.title}</h1>
+            </header>
+        </slot>
+        <slot />
+    </article>
+</MarkdownPage>
+
+<style>
+article {
+    max-width: min(100%, 68ch);
+    margin: auto;
+}
+</style>
