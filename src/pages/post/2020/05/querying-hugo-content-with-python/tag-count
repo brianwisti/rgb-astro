@@ -1,0 +1,5 @@
+#!/bin/bash
+
+exec scripts/q \
+  --sql 'SELECT COUNT(*) AS c, tag FROM _ GROUP BY tag ORDER BY COUNT(*), tag' \
+  --formatter 'sprintf "%3d %s", $r{c}, $r{tag}'
