@@ -1,12 +1,13 @@
 ---
-import Article from "layout:Article";
+import Article from 'layout:Article';
+import Date from 'component:Date.astro';
 
 const { content } = Astro.props;
 ---
 <Article content={content}>
     <header slot="article-header">
         <h1>{content.title}</h1>
-        <p>{content.date}</p>
+        <p><Date timestamp={ content.date } /></p>
     </header>
     <slot />
 </Article>

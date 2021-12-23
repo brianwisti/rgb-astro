@@ -1,5 +1,11 @@
 ---
 import BaseLayout from 'layout:BaseLayout';
+import NoteCard from 'component:NoteCard.astro';
+
+const latestNote = Astro.fetchContent('./note/**/*.md')
+    .sort((a, b) =>
+        new Date(b.date).valueOf() - new Date(a.date).valueOf()
+    )[0];
 
 let content = {
     title: "Welcome to Random Geekery"
@@ -8,5 +14,9 @@ let content = {
 <BaseLayout content={content}>
     <div>
         <p>A blog, of sorts.</p>
+    </div>
+    <div>
+        <h2>Latest Note</h2>
+        <NoteCard note={ latestNote } />
     </div>
 </BaseLayout>

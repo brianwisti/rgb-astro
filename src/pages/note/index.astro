@@ -1,15 +1,22 @@
 ---
+/** Show the most recent Note content. */
+
 import BaseLayout from 'layout:BaseLayout';
+import NoteCard from 'component:NoteCard.astro';
 
 const allNotes = Astro.fetchContent('./**/*.md');
+const recentNotes = allNotes
+    .sort((a, b) =>
+        new Date(b.date).valueOf() - new Date(a.date).valueOf()
+    )
+    .slice(0, 10);
 
 let content = {
     title: "Notes",
 }
 ---
 <BaseLayout content={content}>
-    <p>Yo?</p>
     <div>
-    {allNotes.map((note) => <h1>{note.title}</h1>)}
+    {recentNotes.map((note) => <NoteCard note={note} />)}
     </div>
 </BaseLayout>

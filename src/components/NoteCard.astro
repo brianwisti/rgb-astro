@@ -1,0 +1,20 @@
+---
+/** Render a Note summary. */
+import Date from 'component:Date.astro';
+
+const { note } = Astro.props;
+---
+<div class="note card">
+    <h3>
+        <a href={ note.url }>{ note.title }</a>
+    </h3>
+    <p><Date timestamp={note.date} /></p>
+    { note.content.html }
+</div>
+
+<style>
+    .card {
+        max-width: min(100%, 68ch);
+        margin: auto;
+    }
+</style>

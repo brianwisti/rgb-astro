@@ -1,0 +1,7 @@
+---
+/** Render a parseable date string as a time element. */
+
+const { timestamp } = Astro.props;
+const date = new Date(timestamp);
+---
+<time datetime={ date.toISOString() }>{ date.toDateString() }</time>
