@@ -20,7 +20,7 @@ Feel like coloring something? I decided to share the linework for this drawing.
 
 <div class="image-link"><div class="image-link-preview">
       <a href="/note/2020/04/sepia-sunburst/sepia-sunburst-linework.png">
-        <img src="sepia-sunburst-linework-96x96.png" alt="thumbnail of linked image">
+        <img src="sepia-sunburst-linework-96x96.png" alt="thumbnail of linked image" />
       </a>
     </div>
     <div class="image-link-details">

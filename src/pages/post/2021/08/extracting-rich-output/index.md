@@ -30,7 +30,16 @@ I initially posted a version of this post using [BeautifulSoup][bs4] for HTML
 extraction. Then Rich creator [Will McGugan][will-mgcgugan] pointed out that I could get
 what I need from Rich itself!
 
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Great write up!<br><br>You may be able to skip the Beautiful Soup step with the following:<br><br>console.export_html(code_format=&quot;&lt;pre style=&quot;font-family:Menlo,&#39;DejaVu Sans Mono&#39;,consolas,&#39;Courier New&#39;,monospace&quot;&gt;&#123;code}&lt;/pre&gt;&quot;)</p>&mdash; Will McGugan (@willmcgugan) <a href="https://twitter.com/willmcgugan/status/1430452309536956421?ref_src=twsrc%5Etfw">August 25, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet">
+    <p lang="en" dir="ltr">
+        Great write up!<br /><br />
+        You may be able to skip the Beautiful Soup step with the following:<br /><br />
+        console.export_html(code_format=&quot;&lt;pre style=&quot;font-family:Menlo,&#39;DejaVu Sans Mono&#39;,consolas,&#39;Courier New&#39;,monospace&quot;&gt;&#123;code}&lt;/pre&gt;&quot;)
+    </p>
+    &mdash; Will McGugan (@willmcgugan)
+    <a href="https://twitter.com/willmcgugan/status/1430452309536956421?ref_src=twsrc%5Etfw">August 25, 2021</a>
+</blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 Yeah let's do that instead. Much less to remember.
 
@@ -188,7 +197,7 @@ instead of `rich.print` or `console.print`?
 
 Let me answer that question by pasting the contents of my clipboard:
 
-``` text
+```
 [3m                    Plausible.io Traffic Breakdown                    [0m
 ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┓
 ┃[1m [0m[1mPage                                                   [0m[1m [0m┃[1m [0m[1mVisitors[0m[1m [0m┃

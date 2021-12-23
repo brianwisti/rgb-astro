@@ -66,14 +66,13 @@ That could be a software bug somewhere or it could just be grit in my keyboard.
 
 ## Record Desktop
 
-<aside class="admonition note">
-<p class="admonition-title">Note</p>
+:::note
 
 Okay I’ve never done this part before.
 I probably missed something important.
 Be warned if you try it yourself.
 
-</aside>
+:::
 
 [WebM]: http://www.webmproject.org/
 [WebM support]: http://caniuse.com/#feat=webm
@@ -108,7 +107,7 @@ Ta-da!
 
 <figure>
   <video controls width="75%">
-    <source src="/video/2017/cinnamon-desktop-recording.webm" type="video/webm">
+    <source src="/video/2017/cinnamon-desktop-recording.webm" type="video/webm" />
     Unfortunately, your browser does not support webm
   </video>
   <figcaption>Using Mint Desktop screenshot tools</figcaption>

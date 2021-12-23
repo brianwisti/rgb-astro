@@ -22,7 +22,7 @@ You can color your own if you want!
 <div class="image-link">
   <div class="image-link-preview">
     <a href="2020-12-15-linework.jpg">
-      <img src="2020-12-15-linework-96x96.jpg" alt="thumbnail of linked image">
+      <img src="2020-12-15-linework-96x96.jpg" alt="thumbnail of linked image" />
     </a>
   </div>
   <div class="image-link-details">

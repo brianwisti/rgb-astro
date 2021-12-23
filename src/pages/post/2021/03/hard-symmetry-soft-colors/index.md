@@ -31,7 +31,7 @@ You can grab the line work yourself if you want something to color.
 
 <div class="image-link"><div class="image-link-preview">
   <a href="/post/2021/03/hard-symmetry-soft-colors/2021-03-06-linework.jpg">
-    <img src="/post/2021/03/hard-symmetry-soft-colors/2021-03-06-linework-96x96.jpg" alt="thumbnail of linked image">
+    <img src="/post/2021/03/hard-symmetry-soft-colors/2021-03-06-linework-96x96.jpg" alt="thumbnail of linked image" />
   </a>
 </div>
 <div class="image-link-details">

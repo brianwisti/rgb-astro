@@ -164,13 +164,13 @@ fingerprinting. My music took a full weekend, even with `match` settings giving
 it more leeway to automatically use the likeliest matches. But at the end of it
 all, here’s what I had.
 
-  $ beet stats
-  Tracks: 22112
-  Total time: 8.7 weeks
-  Approximate total size: 107.8 GiB
-  Artists: 2498
-  Albums: 2405
-  Album artists: 1117
+    $ beet stats
+    Tracks: 22112
+    Total time: 8.7 weeks
+    Approximate total size: 107.8 GiB
+    Artists: 2498
+    Albums: 2405
+    Album artists: 1117
 
 [query support]: http://beets.readthedocs.io/en/v1.4.5/reference/query.html
 [format strings]: http://beets.readthedocs.io/en/v1.4.5/reference/pathformat.html
@@ -199,15 +199,14 @@ update the iTunes library.
 [blog post on JavaScript and iTunes]: https://www.macstories.net/tutorials/getting-started-with-javascript-for-automation-on-yosemite/
 [JXA Cookbook page for iTunes]: https://github.com/JXA-Cookbook/JXA-Cookbook/wiki/iTunes
 
-<aside class="admonition note">
-<p class="admonition-title">
+:::note
 
 I spent a full day trying to make JXA work for this. It didn’t. I kept crashing
 Script Editor with whimsical directives like `console.log(iTunes)`. If you want
 to try JXA, look at this [blog post on JavaScript and iTunes][], or the
 [JXA Cookbook page for iTunes][].
 
-</aside>
+:::
 
 [AppleScript]: https://developer.apple.com/library/content/documentation/AppleScript/Conceptual/AppleScriptX/AppleScriptX.html
 [This post]: https://dougscripts.com/itunes/2010/12/get-a-track-reference-from-a-file-path/
@@ -287,8 +286,7 @@ the database, they happen [in real life][] too!
 
 [original date]: http://beets.readthedocs.io/en/v1.4.5/reference/config.html#original-date
 
-<aside class="admonition note">
-<p class="admonition-title">Note</p>
+:::note
 
 Then somebody mentioned that I could skip this particular mess by setting the
 [original date][] option to `yes` in my beets configuration. beets will update a
@@ -296,7 +294,7 @@ song’s `year`, `month`, and `day` fields to reflect the values in
 `original_date`. Use that setting if you would rather not poke around in the
 database.
 
-</aside>
+:::
 
 ### What Next?
 

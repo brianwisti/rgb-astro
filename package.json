@@ -10,5 +10,8 @@
   },
   "devDependencies": {
     "astro": "^0.21.13"
+  },
+  "dependencies": {
+    "@astrojs/markdown-remark": "^0.5.0"
   }
 }

@@ -42,10 +42,8 @@ Rich and pyexiftool make Python an easy choice for this task.
 
 If you want to play along at home, make sure you have the dependencies.
 
-``` text
-$ brew install exiftool
-$ pip install pyexiftool rich typer
-```
+    $ brew install exiftool
+    $ pip install pyexiftool rich typer
 
 [Typer][typer] simplifies turning this random idea into a useful command line tool.
 
@@ -66,9 +64,7 @@ Now you can use [Image::ExifTool][image-exiftool] in your own Perl projects.
 Even though I’m the only user, I still need to figure out how I plan to use it.
 At minimum?  I hand my script a filename.  It hands me metadata.
 
-``` text
-richexif FILENAME [OPTIONS]
-```
+    richexif FILENAME [OPTIONS]
 
 I can hook some [minimal][] Typer argument handling around that flow.
 
@@ -95,20 +91,16 @@ def main(filename: str):
 
 Can I run it?
 
-``` text
-chmod 755 richexif.py
-./richexif.py hoku-hopes-for-snacksjpg.jpg
-```
+    chmod 755 richexif.py
+    ./richexif.py hoku-hopes-for-snacksjpg.jpg
 
 I can!  What happens if I use it wrong?
 
-``` text
-$ ./richexif.py
-Usage: richexif.py [OPTIONS] FILENAME
-Try 'richexif.py --help' for help.
+    $ ./richexif.py
+    Usage: richexif.py [OPTIONS] FILENAME
+    Try 'richexif.py --help' for help.
 
-Error: Missing argument 'FILENAME'.
-```
+    Error: Missing argument 'FILENAME'.
 
 I get an error message telling me what `richexif.py` needs to do its thing.
 Nice.
@@ -157,7 +149,7 @@ def main(filename: str):
 
 And here’s what that looks like.
 
-<pre class="rich"><span style="font-weight: bold">{</span>
+<pre class="rich"><span style="font-weight: bold">&#123;</span>
     <span style="color: #008000">'SourceFile'</span>: <span style="color: #008000">'hoku-hopes-for-snacks.jpg'</span>,
     <span style="color: #008000">'ExifTool:ExifToolVersion'</span>: <span style="color: #000080; font-weight: bold">12.15</span>,
     <span style="color: #008000">'File:FileName'</span>: <span style="color: #008000">'hoku-hopes-for-snacks.jpg'</span>,
@@ -231,14 +223,12 @@ gets us everything.
 
 Try it out!
 
-``` text
-$ ./richexif.py hoku-hopes-for-snacks.jpg --filter=Image
-```
+    $ ./richexif.py hoku-hopes-for-snacks.jpg --filter=Image
 
 Now that I’m not overwhelmed by the quantity of output, I’m a little
 underwhelmed by the quality.
 
-<pre class="rich"><span style="font-weight: bold">{</span>
+<pre class="rich"><span style="font-weight: bold">&#123;</span>
     <span style="color: #008000">'File:ImageWidth'</span>: <span style="color: #000080; font-weight: bold">3672</span>,
     <span style="color: #008000">'File:ImageHeight'</span>: <span style="color: #000080; font-weight: bold">2066</span>,
     <span style="color: #008000">'EXIF:ImageWidth'</span>: <span style="color: #000080; font-weight: bold">4032</span>,
@@ -298,9 +288,7 @@ def main(...):
 
 What does our filtered view look like as a table?
 
-``` text
-$ ./richexif.py hoku-hopes-for-snacksjpg.jpg --filter=Image
-```
+    $ ./richexif.py hoku-hopes-for-snacksjpg.jpg --filter=Image
 
 <pre class="rich"><span style="font-style: italic">                        hoku-hopes-for-snacksjpg.jpg                         </span>
 ┏━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓

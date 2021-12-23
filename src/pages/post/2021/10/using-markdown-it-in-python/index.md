@@ -42,9 +42,7 @@ markdown-it-py alone gets you "enough". Everything you need for [CommonMark][],
 at least. But I want more than enough. I want all the features I can reasonaly
 gather under one install.
 
-```console
-$ pip install markdown-it-py[linkify,plugins]
-```
+    $ pip install markdown-it-py[linkify,plugins]
 
 What did that just install?
 
@@ -122,24 +120,22 @@ file that doesn't exist.
 This will turn a single `.md.txt` file - the extension I'm using to slide past
 Hugo's default Markdown handling - into HTML. I even get a nice `--help` blurb.
 
-```console
-$ python rendermd.py --help
+    $ python rendermd.py --help
 
-Usage: rendermd.py [OPTIONS] SOURCE_PATH
+    Usage: rendermd.py [OPTIONS] SOURCE_PATH
 
-  Transforms markdown into HTML with markdown-it-py.
+    Transforms markdown into HTML with markdown-it-py.
 
-Arguments:
-  SOURCE_PATH  [required]
+    Arguments:
+    SOURCE_PATH  [required]
 
-Options:
-  --install-completion [bash|zsh|fish|powershell|pwsh]
-                                  Install completion for the specified shell.
-  --show-completion [bash|zsh|fish|powershell|pwsh]
-                                  Show completion for the specified shell, to
-                                  copy it or customize the installation.
-  --help                          Show this message and exit.
-```
+    Options:
+    --install-completion [bash|zsh|fish|powershell|pwsh]
+                                    Install completion for the specified shell.
+    --show-completion [bash|zsh|fish|powershell|pwsh]
+                                    Show completion for the specified shell, to
+                                    copy it or customize the installation.
+    --help                          Show this message and exit.
 
 Now I start adding capabilities. If you see this post on the site, you'll know
 it worked.

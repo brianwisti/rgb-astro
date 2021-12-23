@@ -18,7 +18,18 @@ Got distracted by a note from [@choldgraf][choldgraf] about [MyST][myst], a Mark
 aimed at technical writing, in a [Twitter conversation][tweet-thread] that was not
 specifically about MyST.
 
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Two things you may be interested in:<br><br>Markdown in Sphinx : <a href="https://t.co/52Rj05JsqV">https://t.co/52Rj05JsqV</a><br><br>Automatically rebuild are load docs in sphinx: <a href="https://t.co/9lvFyCbB0W">https://t.co/9lvFyCbB0W</a><br><br>Pydata theme: <a href="https://t.co/9qXss5cN15">https://t.co/9qXss5cN15</a><br><br>Lots of other nice themes here: <a href="https://t.co/27G9oawNVu">https://t.co/27G9oawNVu</a></p>&mdash; Chris Holdgraf (@choldgraf) <a href="https://twitter.com/choldgraf/status/1433802076438482949?ref_src=twsrc%5Etfw">September 3, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet">
+    <p lang="en" dir="ltr">
+        Two things you may be interested in:
+        <br /><br />
+        Markdown in Sphinx : <a href="https://t.co/52Rj05JsqV">https://t.co/52Rj05JsqV</a><br /><br />
+        Automatically rebuild are load docs in sphinx: <a href="https://t.co/9lvFyCbB0W">https://t.co/9lvFyCbB0W</a><br /><br />
+        Pydata theme: <a href="https://t.co/9qXss5cN15">https://t.co/9qXss5cN15</a><br /><br />
+        Lots of other nice themes here: <a href="https://t.co/27G9oawNVu">https://t.co/27G9oawNVu</a>
+    </p>
+    &mdash; Chris Holdgraf (@choldgraf) <a href="https://twitter.com/choldgraf/status/1433802076438482949?ref_src=twsrc%5Etfw">September 3, 2021</a>
+</blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 This distracted me from the [NuxtJS][nuxtjs] blog idea that was distracting me from a
 [Nikola][nikola] blog idea that was distracting me from an attempt at porting my

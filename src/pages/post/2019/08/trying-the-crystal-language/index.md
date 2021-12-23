@@ -17,7 +17,7 @@ uuid: 636d64cd-8ac2-421f-afe0-f3cd3f62079b
 
 [Crystal](https://crystal-lang.org/) is a statically typed, compiled
 programming language that looks a *lot* like [Ruby](/tags/ruby). Let’s
-try it out\! Maybe even work on a [Taskwarrior](/tags/taskwarrior) thing
+try it out! Maybe even work on a [Taskwarrior](/tags/taskwarrior) thing
 I’ve been wanting to do.
 
 ## Motivation
@@ -47,14 +47,12 @@ working on a full Windows port, the best path for now is to use
 [Homebrew](https://brew.sh/) on
 [WSL](https://docs.microsoft.com/en-us/windows/wsl/wsl2-about).
 
-<aside class="admonition warning">
-<p class="admonition-title">Warning<?p>
+:::warning
 
 I’m using WSL 2, which is still in development. I haven’t tested any of
 this under WSL 1.
 
-</aside>
-
+:::
 
     $ brew install crystal
     ...
@@ -199,8 +197,7 @@ Okay, directly running scripts is great for testing or quick tasks, but
 Crystal *is* a compiled language. Let’s compile something.
 
 [Paul Fenwick](https://twitter.com/pjf/status/852466839145795584) and
-[Dave
-Jacoby](https://jacoby.github.io/2017/10/25/making-taskwarrior-work-for-me.html)
+[Dave Jacoby](https://jacoby.github.io/2017/10/25/making-taskwarrior-work-for-me.html)
 have — or had, no idea if they still do — a neat trick to show quick
 task status in their shell prompt. I’ll do the same thing, but in
 Crystal.

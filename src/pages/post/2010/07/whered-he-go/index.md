@@ -13,9 +13,7 @@ uuid: 323f089e-4503-4533-9da6-72fcc3855ff8
 ---
 
 I haven't updated this blog in a while, and to be honest I don't really plan to. I tend to dump my thoughts of the moment on
-<a href="http://www.google.com/profiles/brian.wisti#buzz">Google Buzz</a>, while the content I intend to improve and maintain
-is still at [my site](/).
-<!--more-->
+*Google Buzz*, while the content I intend to improve and maintain is still at [my site](/).
 
 ## A few years pass ...
 

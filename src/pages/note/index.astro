@@ -1,0 +1,15 @@
+---
+import BaseLayout from 'layout:BaseLayout';
+
+const allNotes = Astro.fetchContent('./**/*.md');
+
+let content = {
+    title: "Notes",
+}
+---
+<BaseLayout content={content}>
+    <p>Yo?</p>
+    <div>
+    {allNotes.map((note) => <h1>{note.title}</h1>)}
+    </div>
+</BaseLayout>

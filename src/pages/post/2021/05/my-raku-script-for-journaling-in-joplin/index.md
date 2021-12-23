@@ -254,7 +254,19 @@ sub entries-for-today() {
 [@b2gills][b2gills] mentioned that I could also use [`Date.today`][date-today]
 here!
 
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Why didn&#39;t you use Date.​today?<br><br>If you had a coercive parameter, you wouldn&#39;t even need to do anything more than Date.​today.<br><br> sub filtered-entries(Str(Date) $​date-funnel) &#123;…}<br><br> sub entries-for-today() &#123;<br> filtered-entries Date.​today<br> }</p>&mdash; Brad Gilbert (@b2gills) <a href="https://twitter.com/b2gills/status/1397038905405452296?ref_src=twsrc%5Etfw">May 25, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet">
+  <p lang="en" dir="ltr">
+    Why didn&#39;t you use Date.​today?<br /><br />
+    If you had a coercive parameter, you wouldn&#39;t even need to do anything more than Date.​today.<br /><br />
+    sub filtered-entries(Str(Date) $​date-funnel) &#123;…}<br /><br />
+    sub entries-for-today() &#123;<br />
+    filtered-entries Date.​today<br />
+    }
+  </p>
+  &mdash; Brad Gilbert (@b2gills)
+  <a href="https://twitter.com/b2gills/status/1397038905405452296?ref_src=twsrc%5Etfw">May 25, 2021</a>
+  </blockquote>
+  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 I haven't messed with [parameter coercion][parameter-coercion] yet, but that
 looks like it will come in handy.

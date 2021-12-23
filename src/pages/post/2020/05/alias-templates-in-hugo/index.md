@@ -39,7 +39,16 @@ the post here on the site.
 
 I know why — basically.
 
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">&quot;Don&#39;t call it rakudobrew. Don&#39;t call it rakudobrew. Don&#39;t call it rakudobrew.&quot;<br><br>Calls it rakudobrew.<br><br>Typo fixed in URL, but leaving announcement and a redirect entry up so that my shame can burn forever.</p>&mdash; brian wisti (@brianwisti) <a href="https://twitter.com/brianwisti/status/1262922358131744768?ref_src=twsrc%5Etfw">May 20, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+<blockquote class="twitter-tweet">
+  <p lang="en" dir="ltr">
+    &quot;Don&#39;t call it rakudobrew. Don&#39;t call it rakudobrew. Don&#39;t call it rakudobrew.&quot;<br /><br />
+    Calls it rakudobrew.<br /><br />
+    Typo fixed in URL, but leaving announcement and a redirect entry up so that my shame can burn forever.
+  </p>
+  &mdash; brian wisti (@brianwisti)
+  <a href="https://twitter.com/brianwisti/status/1262922358131744768?ref_src=twsrc%5Etfw">May 20, 2020</a>
+  </blockquote>
+  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
 
 My post title and URL referenced Rakubrew’s predecessor "Rakudobrew," which I
 considered an unacceptable faux pas.  So I fixed it.

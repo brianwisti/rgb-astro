@@ -18,7 +18,21 @@ Making note of this
 [tweet](https://twitter.com/eleven_ty/status/1214681563507699713) for
 later:
 
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">RELEASE 📢 Eleventy v0.10.0 🕚⚡️<br><br>⚡️ Async Shortcode Support!<br>⚡️ Add your own data cascade file formats!<br>⚡️ Better --watch/serve performance!<br>⚡️ Easier pagination links!<br>⚡️ Manually watch files!<br><br>Docs: <a href="https://t.co/yqAxn3QqAQ">https://t.co/yqAxn3QqAQ</a><br>Release notes: <a href="https://t.co/tmBYKeCAVm">https://t.co/tmBYKeCAVm</a></p>&mdash; Eleventy (@eleven_ty) <a href="https://twitter.com/eleven_ty/status/1214681563507699713?ref_src=twsrc%5Etfw">January 7, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet">
+    <p lang="en" dir="ltr">
+        RELEASE 📢 Eleventy v0.10.0 🕚⚡️<br /><br />
+        ⚡️ Async Shortcode Support!<br />
+        ⚡️ Add your own data cascade file formats!<br />
+        ⚡️ Better --watch/serve performance!<br />
+        ⚡️ Easier pagination links!<br />
+        ⚡️ Manually watch files!<br /><br />
+        Docs: <a href="https://t.co/yqAxn3QqAQ">https://t.co/yqAxn3QqAQ</a><br />
+        Release notes: <a href="https://t.co/tmBYKeCAVm">https://t.co/tmBYKeCAVm</a>
+    </p>
+    &mdash; Eleventy (@eleven_ty)
+    <a href="https://twitter.com/eleven_ty/status/1214681563507699713?ref_src=twsrc%5Etfw">January 7, 2020</a>
+</blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 
 I love that there are so many great static site generators out. I hate

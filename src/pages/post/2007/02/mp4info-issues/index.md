@@ -14,13 +14,15 @@ updated: 2015-03-28 00:00:00
 uuid: 05791c44-5d02-431c-a05d-d16dc8676f4f
 ---
 
-<!--more-->
-<aside>
-<p>Update 2015-03-28
+:::note Update 2015-03-28
 
-<p>No idea whether this is still true, or even if it was just something stupid I was doing in 2007.
-</aside>
+No idea whether this is still true, or even if it was just something stupid I
+was doing in 2007.
+
+:::
 
 [mp4info]: https://github.com/arbarlow/ruby-mp4info
 
-[mp4info][] thinks that my 5 minute Bob Newhart track is 2 seconds long. Looks like that is an issue on several tracks. I need to dig into that, see why Perl's MP4::Info picks up the correct length but the Ruby counterpart does not.
+[mp4info][] thinks that my 5 minute Bob Newhart track is 2 seconds long. Looks
+like that is an issue on several tracks. I need to dig into that, see why Perl's
+MP4::Info picks up the correct length but the Ruby counterpart does not.

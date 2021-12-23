@@ -18,18 +18,31 @@ uuid: 2a29788c-e66c-47a1-a706-5eae3b9b0351
 I need more than annotations for my [Taskwarrior](/tags/taskwarrior)
 tasks. Let’s write some [Python](/tags/python)!
 
-<aside class="admonition">
+:::note
 
 I labeled this as part of the [Taskwarrior
 Babysteps](/series/taskwarrior-babysteps) series at first. Really this
 post is more about Python code than task management.
 
-</aside>
+:::
 
 It’s the weekend, and I have a task that started with [a
 tweet](https://twitter.com/brianwisti/status/1210771041783447553).
 
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">The more blogs the merrier.<br><br>And especially noteworthy: introduce your readers to RSS. My &quot;follow&quot; page assumes potential blog readers know RSS, but TBH that&#39;s not a safe assumption in 2020.<br><br>So blurbed goal:<br><br>* have the RSS links<br>* explain what RSS is<br>* link to reading tools. <a href="https://t.co/xhqktOR3de">https://t.co/xhqktOR3de</a></p>&mdash; brian wisti (@brianwisti) <a href="https://twitter.com/brianwisti/status/1210771041783447553?ref_src=twsrc%5Etfw">December 28, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet">
+  <p lang="en" dir="ltr">
+    The more blogs the merrier.<br /><br />
+    And especially noteworthy: introduce your readers to RSS. My &quot;follow&quot; page assumes potential blog readers know RSS, but TBH that&#39;s not a safe assumption in 2020.<br /><br />
+    So blurbed goal:<br /><br />
+    * have the RSS links<br />
+    * explain what RSS is<br />
+    * link to reading tools.
+    <a href="https://t.co/xhqktOR3de">https://t.co/xhqktOR3de</a>
+  </p>
+  &mdash; brian wisti (@brianwisti)
+  <a href="https://twitter.com/brianwisti/status/1210771041783447553?ref_src=twsrc%5Etfw">December 28, 2019</a>
+</blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 People with blogs need to keep in mind that most people do not know how
 blogs work. A little bit of explanatory text can go a long way towards
@@ -75,13 +88,13 @@ any better, really.
 I want some way of adding and reviewing information about a particular
 task without cluttering my Taskwarrior reports.
 
-<aside class="admonition">
+:::note
 
 Honestly [org](/tags/org-mode) mode provides all this functionality and more.
 Someday I may even get comfortable enough to prefer it. But right now?
 Taskwarrior and shell tools are easier for me.
 
-</aside>
+:::
 
 ## What I need today
 
@@ -304,15 +317,14 @@ I would forget what task is involved unless I put *something*. So now
 the script adds the task description to a header line the first time a
 note is opened.
 
-<aside class="admonition warning">
-  <p class="admonition-title">Warning</p>
+:::warning
 
 Remember to `flush` your filehandles before handing control over to
 external processes like [Vim](/tags/vim). Python takes care of files and
 buffers on its own schedule. Launching an external process interrupts
 Python’s schedule. So let Python know\!
 
-</aside>
+:::
 
 Also threw in some error checking after the first time I tried writing
 notes for a nonexistent task.

@@ -151,7 +151,7 @@ if __name__ == "__main__":
 <pre style="font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="color: #800080; text-decoration-color: #800080; font-weight: bold">App</span><span style="font-weight: bold">(</span><span style="color: #808000; text-decoration-color: #808000">mastodon</span>=<span style="font-weight: bold">&lt;</span><span style="color: #ff00ff; text-decoration-color: #ff00ff; font-weight: bold">mastodon.Mastodon.Mastodon</span><span style="color: #000000; text-decoration-color: #000000"> object at </span><span style="color: #008080; text-decoration-color: #008080; font-weight: bold">0x7ff14f1e8850</span><span style="font-weight: bold">&gt;)</span>
   </pre>
 
-:::note{title="Exporting Rich output"}
+:::note Exporting Rich output
 
 My code doesn't look *exactly* like what I've shared here. I take advantage
 of Rich's export features to simplify sharing program output.
@@ -284,7 +284,7 @@ if __name__ == "__main__":
   stored.inner for instance
   Calling instance
   Writing data to instance.json
-  <span style="font-weight: bold">{</span>
+  <span style="font-weight: bold">&#123;</span>
   <span style="color: #7fbf7f; text-decoration-color: #7fbf7f">│   </span><span style="color: #008000; text-decoration-color: #008000">'uri'</span>: <span style="color: #008000; text-decoration-color: #008000">'hackers.town'</span>,
   <span style="color: #7fbf7f; text-decoration-color: #7fbf7f">│   </span><span style="color: #008000; text-decoration-color: #008000">'title'</span>: <span style="color: #008000; text-decoration-color: #008000">'hackers.town'</span>,
   <span style="color: #7fbf7f; text-decoration-color: #7fbf7f">│   </span><span style="color: #008000; text-decoration-color: #008000">'short_description'</span>: <span style="color: #008000; text-decoration-color: #008000">"A bunch of technomancers in the fediverse. Keep it fairly clean please. This arcology is for all who wash up upon it's digital shore."</span>,
@@ -342,7 +342,7 @@ if __name__ == "__main__":
 <pre style="font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">Connection instance is <span style="color: #008000; text-decoration-color: #008000">healthy</span>
   stored.inner for instance
   Loading data from instance.json
-  <span style="font-weight: bold">{</span>
+  <span style="font-weight: bold">&#123;</span>
   <span style="color: #7fbf7f; text-decoration-color: #7fbf7f">│   </span><span style="color: #008000; text-decoration-color: #008000">'uri'</span>: <span style="color: #008000; text-decoration-color: #008000">'hackers.town'</span>,
   <span style="color: #7fbf7f; text-decoration-color: #7fbf7f">│   </span><span style="color: #008000; text-decoration-color: #008000">'title'</span>: <span style="color: #008000; text-decoration-color: #008000">'hackers.town'</span>,
   <span style="color: #7fbf7f; text-decoration-color: #7fbf7f">│   </span><span style="color: #008000; text-decoration-color: #008000">'short_description'</span>: <span style="color: #008000; text-decoration-color: #008000">"A bunch of technomancers in the fediverse. Keep it fairly clean please. This arcology is for all who wash up upon it's digital shore."</span>,
@@ -353,12 +353,12 @@ if __name__ == "__main__":
   Writing data to timeline_public.json
   <span style="font-weight: bold">[</span>
   <span style="font-style: italic">    .. skipping a few ...</span>
-  <span style="color: #7fbf7f; text-decoration-color: #7fbf7f">│   </span><span style="font-weight: bold">{</span>
+  <span style="color: #7fbf7f; text-decoration-color: #7fbf7f">│   </span><span style="font-weight: bold">&#123;</span>
   <span style="color: #7fbf7f; text-decoration-color: #7fbf7f">│   │   </span><span style="color: #008000; text-decoration-color: #008000">'date'</span>: <span style="color: #008000; text-decoration-color: #008000">'2021-08-15 22:24:35+00:00'</span>,
   <span style="color: #7fbf7f; text-decoration-color: #7fbf7f">│   │   </span><span style="color: #008000; text-decoration-color: #008000">'author'</span>: <span style="color: #008000; text-decoration-color: #008000">'Endless Screaming'</span>,
   <span style="color: #7fbf7f; text-decoration-color: #7fbf7f">│   │   </span><span style="color: #008000; text-decoration-color: #008000">'content'</span>: <span style="color: #008000; text-decoration-color: #008000">'&lt;p&gt;AAAAAAAAAAAAAAAAAAAAH&lt;/p&gt;'</span>
   <span style="color: #7fbf7f; text-decoration-color: #7fbf7f">│   </span><span style="font-weight: bold">}</span>,
-  <span style="color: #7fbf7f; text-decoration-color: #7fbf7f">│   </span><span style="font-weight: bold">{</span>
+  <span style="color: #7fbf7f; text-decoration-color: #7fbf7f">│   </span><span style="font-weight: bold">&#123;</span>
   <span style="color: #7fbf7f; text-decoration-color: #7fbf7f">│   │   </span><span style="color: #008000; text-decoration-color: #008000">'date'</span>: <span style="color: #008000; text-decoration-color: #008000">'2021-08-15 22:24:43.531000+00:00'</span>,
   <span style="color: #7fbf7f; text-decoration-color: #7fbf7f">│   │   </span><span style="color: #008000; text-decoration-color: #008000">'author'</span>: <span style="color: #008000; text-decoration-color: #008000">'Lynne'</span>,
   <span style="color: #7fbf7f; text-decoration-color: #7fbf7f">│   │   </span><span style="color: #008000; text-decoration-color: #008000">'content'</span>: <span style="color: #008000; text-decoration-color: #008000">'&lt;p&gt;This just touched a single topic that I’ve never heard being brought up anywh'</span>+<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">97</span>

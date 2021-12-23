@@ -114,7 +114,7 @@ up online.  Emacs comes with notes.
 :::note
 
 Doom uses <kbd>SPC h f</kbd> to fetch function descriptions.  Oh hey, while you’re
-at it try <kbd>SPC h d h</kbd> for general Doom help, or <kbd>SPC h d m<kbd> for help with
+at it try <kbd>SPC h d h</kbd> for general Doom help, or <kbd>SPC h d m</kbd> for help with
 a specific mode!
 
 :::
