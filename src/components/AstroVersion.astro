@@ -1,6 +1,11 @@
 ---
 /** Render information about which Astro built the site. */
 
+// I haven't figured out a way to query Astro directly just yet, so I check
+// `package.json` instead.
+// 
+// via https://github.com/withastro/astro/blob/main/packages/astro/test/fixtures/builtins/src/components/Version.astro
+
 import fs from 'node:fs/promises';
 
 const url = new URL('../../package.json', import.meta.url);
