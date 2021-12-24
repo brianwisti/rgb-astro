@@ -1,14 +1,22 @@
 ---
 import BaseLayout from 'layout:BaseLayout';
 import NoteCard from 'component:NoteCard.astro';
+import PostCard from 'component:PostCard.astro';
 
 const latestNote = Astro.fetchContent('./note/**/*.md')
     .sort((a, b) =>
         new Date(b.date).valueOf() - new Date(a.date).valueOf()
     )[0];
 
+const allPosts = Astro.fetchContent('./post/**/*.md');
+const recentPosts = allPosts
+    .sort((a, b) =>
+        new Date(b.date).valueOf() - new Date(a.date).valueOf()
+    )
+    .slice(0, 5);
+
 let content = {
-    title: "Welcome to Random Geekery"
+    title: 'Home'
 };
 ---
 <BaseLayout content={content}>
@@ -18,5 +26,9 @@ let content = {
     <div>
         <h2>Latest Note</h2>
         <NoteCard note={ latestNote } />
+    </div>
+    <div>
+        <h2>Latest Posts</h2>
+        {recentPosts.map((post) => <PostCard post={ post } />)}
     </div>
 </BaseLayout>

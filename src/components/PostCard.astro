@@ -1,0 +1,17 @@
+---
+/** Render a Post summary. */
+import Card from 'component:Card.astro';
+import Date from 'component:Date.astro';
+
+const { post } = Astro.props;
+---
+<Card article={ post }>
+    <div class="description">{ post.description }</div>
+    <div class="summary">{ post.summary }</div>
+</Card>
+
+<style>
+    .description {
+        font-style: italic;
+    }
+</style>

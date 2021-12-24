@@ -1,0 +1,20 @@
+---
+/** Render something in a summary card. */
+import Date from 'component:Date.astro';
+
+const { article } = Astro.props;
+---
+<div>
+    <h3>
+        <a href={ article.url }>{ article.title }</a>
+    </h3>
+    <p><Date timestamp={ article.date } /></p>
+    <slot />
+</div>
+
+<style>
+div {
+    max-width: min(100%, 68ch);
+    margin: auto;
+}
+</style>

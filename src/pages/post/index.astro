@@ -1,0 +1,22 @@
+---
+/** Show the most recent Note content. */
+
+import BaseLayout from 'layout:BaseLayout';
+import PostCard from 'component:PostCard.astro';
+
+const allPosts = Astro.fetchContent('./**/*.md');
+const recentPosts = allPosts
+    .sort((a, b) =>
+        new Date(b.date).valueOf() - new Date(a.date).valueOf()
+    )
+    .slice(0, 10);
+
+let content = {
+    title: "Posts",
+}
+---
+<BaseLayout content={ content }>
+    <div>
+    {recentPosts.map((post) => <PostCard post={ post } />)}
+    </div>
+</BaseLayout>
