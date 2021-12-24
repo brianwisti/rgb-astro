@@ -1,0 +1,22 @@
+---
+/** Gives a high level view of a given section. */
+import BaseLayout from 'layout:BaseLayout';
+import SectionYearSummaries from 'component:SectionYearSummaries.astro';
+
+const { section, content } = Astro.props;
+---
+<BaseLayout content={content}>
+    <section>
+        <div>
+            <slot />
+        </div>
+        <SectionYearSummaries section={section} />
+    </section>
+</BaseLayout>
+
+<style>
+    section {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+    }
+</style>

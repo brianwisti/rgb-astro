@@ -1,0 +1,39 @@
+---
+/** Summarize all published years for a given section */
+
+function yearSummariesForSection(section) {
+    const allArticles = Astro.fetchContent('../pages/**/*.md')
+        .filter((article) => {
+            return article.url.split("/")[1] == section
+        });
+    const years = allArticles.map((article) => new Date(article.date).getFullYear());
+    const articlesInYear = years.reduce(
+        (acc, year) => {
+            if (acc[year] === undefined) {
+                acc[year] = 0;
+            }
+
+            acc[year] += 1;
+            return acc;
+        },
+        {}
+    );
+    return Object.keys(articlesInYear)
+        .sort((a, b) => b.localeCompare(a))
+        .map((year) => {
+            return { year: year, count: articlesInYear[year]}
+        });
+}
+
+let content = {
+    title: "Notes",
+}
+
+const { section } = Astro.props;
+const yearSummaries = yearSummariesForSection(section);
+---
+<div>
+    {yearSummaries.map(({ year, count }) =>
+        <div><a href="/${ section }/${ year }/">{ year }</a>: { count } published</div>
+    )}
+</div>

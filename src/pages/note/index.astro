@@ -1,7 +1,7 @@
 ---
 /** Show the most recent Note content. */
 
-import BaseLayout from 'layout:BaseLayout';
+import SectionIndex from 'layout:SectionIndex';
 import NoteCard from 'component:NoteCard.astro';
 
 const allNotes = Astro.fetchContent('./**/*.md');
@@ -11,46 +11,10 @@ const recentNotes = allNotes
     )
     .slice(0, 10);
 
-const years = allNotes.map((note) => new Date(note.date).getFullYear());
-
-const noteYears = years.reduce(
-    (acc, year) => {
-        if (acc[year] === undefined) {
-            acc[year] = 0;
-        }
-
-        acc[year] += 1;
-        return acc;
-    },
-    {}
-);
-
-const yearEntries = Object.keys(noteYears)
-    .sort((a, b) => b.localeCompare(a))
-    .map((year) => {
-        return { year: year, count: noteYears[year]}
-    });
-
 let content = {
     title: "Notes",
 }
 ---
-<BaseLayout content={content}>
-    <section>
-        <div>
-            {recentNotes.map((note) => <NoteCard note={note} />)}
-        </div>
-        <div>
-            {yearEntries.map(({ year, count }) =>
-                <div><a href="/note/${ year }/">{ year }</a>: { count } notes</div>
-            )}
-        </div>
-    </section>
-</BaseLayout>
-
-<style>
-    section {
-        display: grid;
-        grid-template-columns: 3fr 1fr;
-    }
-</style>
+<SectionIndex content={content} section="note">
+    {recentNotes.map((note) => <NoteCard note={note} />)}
+</SectionIndex>

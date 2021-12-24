@@ -1,7 +1,7 @@
 ---
 /** Show the most recent Note content. */
 
-import BaseLayout from 'layout:BaseLayout';
+import SectionIndex from 'layout:SectionIndex';
 import PostCard from 'component:PostCard.astro';
 
 const allPosts = Astro.fetchContent('./**/*.md');
@@ -15,6 +15,6 @@ let content = {
     title: "Posts",
 }
 ---
-<BaseLayout content={ content }>
+<SectionIndex content={ content } section="post">
     {recentPosts.map((post) => <PostCard post={ post } />)}
-</BaseLayout>
+</SectionIndex>

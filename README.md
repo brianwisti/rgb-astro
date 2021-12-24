@@ -22,7 +22,7 @@ The material in this repo is licensed under a Creative Commons license. See
 
 Sort of in priority order, but probably won't be completed in priority order.
 
-- [ ] all markdown sources get loaded
+- [x] all markdown sources get loaded
 - [ ] meta pages to list bundle content
 - [ ] images get loaded
     - [ ] store originals in `assets/img` with subpath matching endpoint
