@@ -1,0 +1,34 @@
+---
+/** Render some trivia about this site. */
+import AstroVersion from 'component:AstroVersion.astro';
+import DateStamp from 'component:DateStamp.astro';
+
+const buildTime = new Date();
+---
+<footer>
+    <p>
+        Built <DateStamp timestamp={buildTime} /> with ♥!
+        And <AstroVersion />
+    </p>
+</footer>
+<div class="disclaimer">
+    This is an experiment building my personal site with
+    <a href="https://astro.build">Astro</a>. Styles are wonky. Content is missing.
+    Features are incomplete. Many links are broken.
+    Even more than on the real site!
+    — <a href="https://randomgeekery.org">Brian Wisti</a>
+</div>
+
+<style>
+    footer {
+        font-size: small;
+        text-align: center;
+    }
+
+    .disclaimer {
+        background-color: maroon;
+        color: white;
+        padding: 1em;
+        text-align:
+    }
+</style>

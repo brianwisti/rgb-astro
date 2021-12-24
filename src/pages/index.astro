@@ -20,15 +20,30 @@ let content = {
 };
 ---
 <BaseLayout content={content}>
-    <div>
-        <p>A blog, of sorts.</p>
-    </div>
-    <div>
-        <h2>Latest Note</h2>
-        <NoteCard note={ latestNote } />
-    </div>
-    <div>
-        <h2>Latest Posts</h2>
-        {recentPosts.map((post) => <PostCard post={ post } />)}
-    </div>
+    <section>
+        <div>
+            <p>A blog, of sorts.</p>
+        </div>
+        <div>
+            <h2>Latest Note</h2>
+            <NoteCard note={ latestNote } />
+        </div>
+        <div>
+            <h2>Latest Posts</h2>
+            {recentPosts.map((post) => <PostCard post={ post } />)}
+        </div>
+    </section>
 </BaseLayout>
+
+<style>
+section {
+    display: grid;
+    grid-gap: 1rem;
+}
+
+@media (min-width: 1000px) {
+    section {
+        grid-template-columns: 40ch 1fr 1fr;
+    }
+}
+</style>

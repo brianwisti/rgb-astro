@@ -1,10 +1,18 @@
 ---
 import SiteMenu from "component:SiteMenu.astro";
 ---
+<header>
+    <div>
+        <h1><a href="/">Random Geekery</a></h1>
+    </div>
+    <SiteMenu />
+</header>
+
 <style>
     header {
+        width: 100%;
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr))
     }
     header img {
         width: 2em;
@@ -18,9 +26,3 @@ import SiteMenu from "component:SiteMenu.astro";
         font-weight: 500;
     }
 </style>
-<header>
-    <div>
-        <h1><a href="/">Random Geekery</a></h1>
-    </div>
-    <SiteMenu />
-</header>

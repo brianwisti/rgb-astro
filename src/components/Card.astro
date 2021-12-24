@@ -1,6 +1,6 @@
 ---
 /** Render something in a summary card. */
-import Date from 'component:Date.astro';
+import DateStamp from 'component:DateStamp.astro';
 
 const { article } = Astro.props;
 ---
@@ -8,7 +8,7 @@ const { article } = Astro.props;
     <h3>
         <a href={ article.url }>{ article.title }</a>
     </h3>
-    <p><Date timestamp={ article.date } /></p>
+    <p><DateStamp timestamp={ article.date } /></p>
     <slot />
 </div>
 

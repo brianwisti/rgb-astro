@@ -1,6 +1,7 @@
 ---
 import Masthead from "component:Masthead.astro";
 import PageMeta from "component:PageMeta.astro";
+import SiteFooter from "component:SiteFooter.astro";
 
 const { content } = Astro.props;
 ---
@@ -14,6 +15,25 @@ const { content } = Astro.props;
         <div>
             <slot />
         </div>
+        <SiteFooter />
     </main>
 </body>
 </html>
+
+<style>
+    body {
+        padding: 0rem 2rem 4rem 2rem;
+        width: 100%;
+        min-height: 100vh;
+        justify-content: center;
+        background: #f9fafb;
+        color: #111827;
+    }
+
+    @media (prefers-color-scheme: dark) {
+        body {
+            background: #111827;
+            color: #fff;
+        }
+    }
+</style>

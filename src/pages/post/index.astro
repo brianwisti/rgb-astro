@@ -16,7 +16,5 @@ let content = {
 }
 ---
 <BaseLayout content={ content }>
-    <div>
     {recentPosts.map((post) => <PostCard post={ post } />)}
-    </div>
 </BaseLayout>
