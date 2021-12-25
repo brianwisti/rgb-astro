@@ -1,8 +1,7 @@
 ---
 /** List articles published in this section during the given year. */
 import BaseLayout from 'layout:BaseLayout';
-import NoteCard from 'component:NoteCard.astro';
-import PostCard from 'component:PostCard.astro';
+import ArticleListEntry from 'component:ArticleListEntry.astro';
 
 export async function getStaticPaths() {
     const sections = ['post', 'note'];
@@ -10,48 +9,48 @@ export async function getStaticPaths() {
     let params = [];
 
     sections.forEach((section) => {
-        const sectionArticles = articles.filter((article) => {
-            return article.url.split("/")[1] == section
-        });
-        const yearsForSection = new Set(sectionArticles.map(
-            (article) => new Date(article.date).getFullYear()
-        ));
+      let articlesForYear = {};
 
-        yearsForSection.forEach((year) => {
-            params.push({
-                params: {
-                    section: section,
-                    year: year.toString(),
-                }
-            });
+      const sectionArticles = articles.filter((article) => {
+          return article.url.split("/")[1] == section
+      });
+
+      sectionArticles.forEach((article) => {
+        const year = new Date(article.date).getFullYear().toString();
+
+        if (articlesForYear[year] === undefined) {
+          articlesForYear[year] = [];
+        }
+
+        articlesForYear[year].push(article);
+      });
+
+      for (const [year, articles] of Object.entries(articlesForYear)) {
+        const sortedArticles = articles.sort((a, b) =>
+          new Date(b.date).valueOf() - new Date(a.date).valueOf()
+        );
+
+        params.push({
+          params: {
+            section: section,
+            year: year,
+          },
+          props: { articles: sortedArticles },
         });
+      }
     });
 
     return params;
 }
 
 const { section, year } = Astro.request.params;
-
-// TODO: Maybe this can be built as a prop in getStaticPaths()?
-const articles = Astro.fetchContent('../**/*.md')
-    .filter((article) => {
-        const articleSection = article.url.split("/")[1];
-        const articleYear = new Date(article.date).getFullYear().toString();
-
-        return articleSection == section && articleYear == year;
-    })
-    .sort((a, b) =>
-            new Date(b.date).valueOf() - new Date(a.date).valueOf()
-    )
+const { articles } = Astro.props;
 
 let content = {
     title: `${section}: ${year}`
 }
 ---
 <BaseLayout content={content}>
-    <h1>{ content.title }</h1>
-    {articles.map((article) =>
-        section == "post" ? <PostCard post={article} />
-            : section == "note" ? <NoteCard note={article} />
-                : <h1>{article.title}</h1>)}
+  <h1>{ content.title }</h1>
+  {articles.map((article) => <ArticleListEntry article={article} />)}
 </BaseLayout>

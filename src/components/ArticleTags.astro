@@ -6,10 +6,7 @@ const { article } = Astro.props;
 let tags = article.tags;
 
 if (tags === undefined) {
-  console.log(`No tags in "${article.title}"`);
   tags = []
 }
 ---
-<div>
-  {tags.map((tag) => <Tag tag={tag} />)}
-</div>
+{tags.map((tag) => <Tag tag={tag} />)}
