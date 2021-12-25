@@ -12,7 +12,7 @@ tags:
 - linux
 - wsl
 - break my computer
-- never mind I'll do it myself
+- never mind I can do it myself
 title: Wanting WSL 2
 uuid: 0474291a-6000-43bd-94ae-9bd452c2b95c
 ---

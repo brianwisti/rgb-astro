@@ -6,8 +6,8 @@ slug: i-m-trying-a-notes-collection
 tags:
 - site
 - statamic
-- shouldn't you be working
-- it's sunday
+- should-you-be-working
+- not-on-sunday
 title: I'm trying a "notes" collection
 uuid: 8e92333f-ec76-4abb-ab72-f46339bc85dd
 ---

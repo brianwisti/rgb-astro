@@ -13,9 +13,9 @@ tags:
 - hugo
 - asciidoctor
 - site
-- don't try this at home
-- fine go ahead
-- but I warned you
+- do-not-try-this-at-home
+- fine-go-ahead
+- but-i-warned-you
 title: Letting Ruby build Asciidoctor files for Hugo
 uuid: be41fa2a-8ebb-4739-bda0-108ae33b8a31
 ---

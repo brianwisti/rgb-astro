@@ -7,11 +7,11 @@ date: 2019-07-04 01:10:51
 layout: layout:PublishedArticle
 slug: i-stole-a-great-idea
 tags:
-- Picasso
-- TS Eliot
-- i stole this
-- am i a great artist
-- don't answer that
+- picasso
+- ts-eliot
+- i-stole-this
+- am-i-a-great-artist
+- do-not-answer-that
 title: I Stole A Great Idea
 uuid: 2d049297-7779-4b09-b752-572dd08c8c05
 ---

@@ -6,7 +6,7 @@ slug: found-the-micro-editor
 tags:
 - editors
 - shell
-- Life doesn't have to be hard
+- life-does-not-have-to-be-hard
 title: Found the micro editor
 uuid: 6e12fc58-1141-41b0-bfde-1edf92e26a80
 ---

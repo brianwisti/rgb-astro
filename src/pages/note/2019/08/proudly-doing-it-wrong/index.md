@@ -9,8 +9,8 @@ slug: proudly-doing-it-wrong
 tags:
 - screenshot
 - javascript
-- no i know
-- i'll fix it
+- no-i-know
+- i-will-fix-it
 title: Proudly doing it wrong
 uuid: f880fe51-3798-441f-b231-0cc64aa751f1
 ---

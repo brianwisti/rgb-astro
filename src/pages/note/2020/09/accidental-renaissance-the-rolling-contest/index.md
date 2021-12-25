@@ -4,9 +4,9 @@ date: 2020-09-20 05:57:36
 layout: layout:PublishedArticle
 slug: accidental-renaissance-the-rolling-contest
 tags:
-- accidental renaissance
-- found online
-- It's Art!
+- accidental-renaissance
+- found-online
+- this-is-art
 title: 'Accidental Renaissance: The rolling contest'
 uuid: 27a281ee-4665-4c6a-af27-3caf4a216ece
 ---

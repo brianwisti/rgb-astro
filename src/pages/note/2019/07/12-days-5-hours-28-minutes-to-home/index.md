@@ -9,7 +9,7 @@ tags:
 - coffee
 - work trip
 - too early for clever hashtags
-- I can't even type yet
+- typing is hard
 title: 12 days 5 hours 28 minutes to home
 uuid: 54a8ffb0-67f0-406c-82a3-999f864199c9
 ---

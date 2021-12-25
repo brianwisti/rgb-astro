@@ -7,6 +7,7 @@ tags:
 - astro-dot-build
 - ssg
 - site
+layout: layout:PublishedArticle
 ---
 
 [Astro][]'s great once you get started. A bit funky if you have twenty years of

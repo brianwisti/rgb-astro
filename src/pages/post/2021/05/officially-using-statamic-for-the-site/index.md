@@ -8,9 +8,9 @@ slug: officially-using-statamic-for-the-site
 tags:
 - site
 - statamic
-- cause it's there
+- cause-its-there
 - my brand
-- Oooh a sparkly
+- ooh-a-sparkly
 title: Officially Using Statamic For The Site
 uuid: 5917577e-0296-4515-83ae-09b8d3d7b166
 ---

@@ -3,9 +3,9 @@ date: 2020-05-13 02:11:00
 layout: layout:PublishedArticle
 slug: shaved-3-seconds-off-site-build-time
 tags:
-- feels good
-- but why
-- cause it's there
+- feels-good
+- but-why
+- cause-its-there
 - site
 title: Shaved 3 Seconds Off Site Build Time!
 uuid: 78eba979-c94d-42de-9a98-55e8b2073d80

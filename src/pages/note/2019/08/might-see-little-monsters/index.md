@@ -10,7 +10,7 @@ tags:
 - movie
 - zombie
 - jam fight
-- you've got red on you
+- you-ve got red on you
 title: Might see Little Monsters
 updated: 2021-08-26
 uuid: 5913a7be-17eb-48bb-a961-b7f1905727de

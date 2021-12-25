@@ -11,9 +11,9 @@ tags:
 - found
 - ick
 - me
-- I'm ick
+- I am ick
 - The art is not ick
-- unless that's cool
+- unless that means cool
 title: Artist's rendition of my sinuses
 uuid: 48e67d8a-9048-405d-a974-582c902c0a7f
 ---

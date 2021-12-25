@@ -10,7 +10,7 @@ source:
   url: https://www.speedtest.net/result/8366939985
 tags:
 - moved in
-- now it's real
+- for real
 - look i added source links
 title: Internet Connected!
 uuid: fea1b0f8-60e7-4085-9309-48da7b0cf2ad

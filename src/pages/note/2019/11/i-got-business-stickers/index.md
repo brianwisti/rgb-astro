@@ -8,9 +8,9 @@ slug: i-got-business-stickers
 tags:
 - drawing
 - adulting
-- for old kids
-- it's business time
-- look what i can do
+- for-old-kids
+- its-business-time
+- look-what-i-can-do
 title: I got business stickers
 uuid: fe5440c5-691b-4d3e-8b65-a4cccb63d19a
 ---

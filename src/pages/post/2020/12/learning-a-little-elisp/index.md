@@ -9,7 +9,7 @@ slug: learning-a-little-elisp
 tags:
 - elisp
 - emacs
-- org mode
+- org-mode
 title: Learning a little elisp
 uuid: c1907109-ac65-44d8-844d-be0fd6e3d021
 ---
