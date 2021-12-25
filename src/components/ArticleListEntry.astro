@@ -1,0 +1,37 @@
+---
+/*** Render a quick summary of a single article */
+import DateStamp from 'component:DateStamp.astro';
+import ArticleTags from 'component:ArticleTags.astro';
+
+const { article } = Astro.props
+const articleSection = article.url.split("/")[1];
+---
+<section>
+  <div>
+    <DateStamp timestamp={article.date} />
+  </div>
+  <div class="article-details">
+    <div>
+      <strong> <a href={ article.url }>{ article.title }</a> </strong>
+    </div>
+    <div>
+      <a href="/${articleSection}">{ articleSection }</a>
+    </div>
+    <div>
+      <ArticleTags article={article} />
+    </div>
+  </div>
+</section>
+
+<style>
+section {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: 20ch auto;
+}
+
+.article-details {
+  display: flex;
+  gap: 1rem;
+}
+</style>

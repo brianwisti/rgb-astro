@@ -3,15 +3,18 @@
 
 // I haven't figured out a way to query Astro directly just yet, so I check
 // `package.json` instead.
-// 
 // via https://github.com/withastro/astro/blob/main/packages/astro/test/fixtures/builtins/src/components/Version.astro
 
 import fs from 'node:fs/promises';
 
-const url = new URL('../../package.json', import.meta.url);
-const json = await fs.readFile(url, 'utf-8');
-const data = JSON.parse(json);
-const astroVersion = data.devDependencies.astro.replace("^", "")
+async function readVersionFromPackage() {
+  const url = new URL('../../package.json', import.meta.url);
+  const json = await fs.readFile(url, 'utf-8');
+  const data = JSON.parse(json);
+  return data.devDependencies.astro.replace("^", "");
+}
+
+const astroVersion = await readVersionFromPackage();
 ---
 <span>
     <a href="https://astro.build">Astro</a> version { astroVersion }

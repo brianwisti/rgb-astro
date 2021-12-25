@@ -1,0 +1,48 @@
+---
+/** List articles with a given tag */
+import BaseLayout from 'layout:BaseLayout';
+import ArticleListEntry from 'component:ArticleListEntry.astro';
+
+export async function getStaticPaths() {
+  const articles = Astro.fetchContent('../**/*.md');
+  const taggedArticles = articles.filter(
+    (article) => article.tags !== undefined
+  );
+
+  const tagsFound = taggedArticles.map((article) => article.tags).flat();
+  const uniqueTags = [...new Set(tagsFound)];
+
+  return uniqueTags.map((tag) => {
+    return {
+      params: { tag: tag },
+    };
+  });
+}
+
+async function getPublishedArticlesWithTag(tag) {
+  const articles =
+    Astro.fetchContent('../**/*.md')
+    .filter(
+      (article) => article.date !== undefined && article.tags !== undefined
+    )
+    .filter(
+      (article) => article.tags.includes(tag)
+    ).sort(
+      (a, b) => new Date(b.date).valueOf() - new Date(a.date).valueOf()
+    );
+
+  return articles;
+}
+
+const { tag } = Astro.request.params;
+const articlesWithTag = await getPublishedArticlesWithTag(tag);
+const content = {
+  title: `Tag: ${tag}`,
+};
+---
+<BaseLayout content={content}>
+  <p>
+    Showing {articlesWithTag.length} articles tagged <em>{tag}</em>
+  </p>
+  {articlesWithTag.map((article) => <ArticleListEntry article={article} />)}
+</BaseLayout>

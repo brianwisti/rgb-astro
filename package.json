@@ -9,7 +9,9 @@
     "preview": "astro preview"
   },
   "devDependencies": {
-    "astro": "^0.22.1"
+    "astro": "^0.22.1",
+    "unocss": "^0.18.0",
+    "vite-imagetools": "^4.0.3"
   },
   "dependencies": {
     "@astrojs/markdown-remark": "^0.6.0"

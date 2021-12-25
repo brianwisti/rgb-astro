@@ -1,0 +1,12 @@
+---
+/*** Render a tag as a link to a list of tagged articles */
+
+const { tag } = Astro.props;
+---
+<a href="/tag/${ tag }">{ tag }</a>
+
+<style>
+a::before {
+  content: "#";
+}
+</style>
