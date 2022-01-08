@@ -1,7 +1,6 @@
 ---
 /** Render a Post summary. */
 import Card from 'component:Card.astro';
-import { Markdown } from 'astro/components';
 
 const { post } = Astro.props;
 
@@ -11,7 +10,7 @@ if (post === undefined) {
 ---
 <Card article={ post }>
     <div class="description">
-      <Markdown>{post.cardContent}</Markdown>
+      {post.cardContent}
     </div>
 </Card>
 

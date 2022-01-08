@@ -13,6 +13,7 @@ tags:
 - parrot
 - learn
 title: Parrot Babysteps 02 - Variables and Types
+description: Getting started with simple variables in Parrot
 updated: 2010-07-21 00:00:00
 uuid: 8c69f18c-a428-41d0-b222-4980788db1ad
 ---

@@ -9,6 +9,7 @@ layout: layout:PublishedArticle
 series:
 - Python Interactive Fiction
 slug: python-interactive-fiction-01-handling-a-single-round
+description: Writing up a single turn of interaction
 tags:
 - python
 - ifiction

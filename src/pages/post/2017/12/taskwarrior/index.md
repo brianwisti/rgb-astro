@@ -13,6 +13,7 @@ slug: taskwarrior
 tags:
 - taskwarrior
 title: Taskwarrior
+description: Getting started with command line task management in Taskwarrior
 updated: 2017-12-22 00:00:00
 uuid: 1f30d9d2-77e0-4c05-beff-06d6c5745445
 ---

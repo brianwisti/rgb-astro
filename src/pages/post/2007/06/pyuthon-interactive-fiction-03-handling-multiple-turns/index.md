@@ -14,6 +14,7 @@ tags:
 - ifiction
 - learn
 title: Python Interactive Fiction - 03 Handling Multiple Turns
+description: Letting Python handle more than one round
 updated: 2009-07-11 00:00:00
 uuid: e6d699a1-f005-4d39-ac23-28c333ba1186
 ---

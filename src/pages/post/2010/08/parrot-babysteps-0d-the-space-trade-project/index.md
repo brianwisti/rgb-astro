@@ -13,6 +13,7 @@ tags:
 - parrot
 - learn
 title: Parrot Babysteps 0d - The SpaceTrade Project
+description: Trying to come up with an actual Parrot project
 updated: 2010-08-30 00:00:00
 uuid: 9445ddb9-240f-46a9-b838-19ccd5c129e4
 ---

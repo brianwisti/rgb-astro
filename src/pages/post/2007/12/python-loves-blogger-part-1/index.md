@@ -7,6 +7,7 @@ category: blogspot
 date: 2007-12-28 00:00:00
 layout: layout:PublishedArticle
 slug: python-loves-blogger-part-1
+description: Posting to Blogger with Python
 tags:
 - blogger
 - python
