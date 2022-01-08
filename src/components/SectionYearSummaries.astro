@@ -1,12 +1,12 @@
 ---
+import contentSummaries from '../config.mjs';
+
 /** Summarize all published years for a given section */
 
 function yearSummariesForSection(section) {
-    const allArticles = Astro.fetchContent('../pages/**/*.md')
-        .filter((article) => {
-            return article.url.split("/")[1] == section
-        });
-    const years = allArticles.map((article) => new Date(article.date).getFullYear());
+    const allArticles = contentSummaries
+        .filter(contentSummary => contentSummary.section === section);
+    const years = allArticles.map((article) => article.year);
     const articlesInYear = years.reduce(
         (acc, year) => {
             if (acc[year] === undefined) {

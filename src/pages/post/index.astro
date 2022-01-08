@@ -3,9 +3,10 @@
 
 import SectionIndex from 'layout:SectionIndex';
 import PostCard from 'component:PostCard.astro';
+import contentSummaries from '../../config.mjs';
 
-const allPosts = Astro.fetchContent('./**/*.md');
-const recentPosts = allPosts
+const recentPosts = contentSummaries
+    .filter(contentSummary => contentSummary.section === "post")
     .sort((a, b) =>
         new Date(b.date).valueOf() - new Date(a.date).valueOf()
     )

@@ -1,9 +1,12 @@
 ---
 /** Render a Note summary. */
 import Card from 'component:Card.astro';
+import { Markdown } from 'astro/components';
 
 const { note } = Astro.props;
 ---
 <Card article={ note }>
-  { note.content.html }
+  <Markdown>
+    { note.cardContent }
+  </Markdown>
 </Card>

@@ -10,6 +10,7 @@ slug: php-buzz-stream-reader
 tags:
 - php
 title: PHP Buzz Stream Reader
+description: Does anyone even remember Google Buzz anymore?
 updated: 2020-03-13
 uuid: a4cb7096-e105-4173-a78a-9be6a97f7c4f
 ---

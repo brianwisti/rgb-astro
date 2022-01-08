@@ -3,8 +3,7 @@
 import DateStamp from 'component:DateStamp.astro';
 import ArticleTags from 'component:ArticleTags.astro';
 
-const { article } = Astro.props
-const articleSection = article.url.split("/")[1];
+const { article } = Astro.props;
 ---
 <section>
   <div>
@@ -12,10 +11,10 @@ const articleSection = article.url.split("/")[1];
   </div>
   <div class="article-details">
     <div>
-      <strong> <a href={ article.url }>{ article.title }</a> </strong>
+      <strong> <a href={ article.href }>{ article.title }</a> </strong>
     </div>
     <div>
-      <a href="/${articleSection}">{ articleSection }</a>
+      <a href="/${article.section}">{ article.section }</a>
     </div>
     <div>
       <ArticleTags article={article} />

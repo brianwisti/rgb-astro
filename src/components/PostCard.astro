@@ -1,12 +1,18 @@
 ---
 /** Render a Post summary. */
 import Card from 'component:Card.astro';
+import { Markdown } from 'astro/components';
 
 const { post } = Astro.props;
+
+if (post === undefined) {
+  throw "How is there no post for this PostCard?";
+}
 ---
 <Card article={ post }>
-    <div class="description">{ post.description }</div>
-    <div class="summary">{ post.summary }</div>
+    <div class="description">
+      <Markdown>{post.cardContent}</Markdown>
+    </div>
 </Card>
 
 <style>

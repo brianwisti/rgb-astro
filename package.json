@@ -9,7 +9,10 @@
     "preview": "astro preview"
   },
   "devDependencies": {
+    "@small-tech/jsdb": "^2.0.6",
     "astro": "^0.22.1",
+    "fast-glob": "^3.2.9",
+    "gray-matter": "^4.0.3",
     "unocss": "^0.18.0",
     "vite-imagetools": "^4.0.3"
   },

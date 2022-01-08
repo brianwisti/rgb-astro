@@ -2,8 +2,7 @@
 /*** Render tags associated with an article */
 import Tag from 'component:Tag.astro';
 
-const { article } = Astro.props;
-let tags = article.tags;
+let { tags } = Astro.props;
 
 if (tags === undefined) {
   tags = []

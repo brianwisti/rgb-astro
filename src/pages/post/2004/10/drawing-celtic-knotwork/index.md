@@ -4,6 +4,7 @@ aliases:
 - /post/2004/drawing-celtic-knotwork/
 - /2004/10/01/drawing-celtic-knotwork/
 category: coolnamehere
+description: Using Ruby to draw Celtic knotwork panels
 date: 2004-10-01 00:00:00
 layout: layout:PublishedArticle
 slug: drawing-celtic-knotwork

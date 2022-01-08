@@ -2,21 +2,20 @@
 /** List articles published in this section during the given year. */
 import BaseLayout from 'layout:BaseLayout';
 import ArticleListEntry from 'component:ArticleListEntry.astro';
+import contentSummaries from '../../config.mjs';
 
 export async function getStaticPaths() {
     const sections = ['post', 'note'];
-    const articles = Astro.fetchContent('../**/*.md');
+    const articles = contentSummaries;
     let params = [];
 
     sections.forEach((section) => {
       let articlesForYear = {};
 
-      const sectionArticles = articles.filter((article) => {
-          return article.url.split("/")[1] == section
-      });
+      const sectionArticles = articles.filter((article) => article.section === section);
 
       sectionArticles.forEach((article) => {
-        const year = new Date(article.date).getFullYear().toString();
+        const year = article.year;
 
         if (articlesForYear[year] === undefined) {
           articlesForYear[year] = [];

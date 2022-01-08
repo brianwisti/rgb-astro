@@ -2,12 +2,13 @@
 /** List articles with a given tag */
 import BaseLayout from 'layout:BaseLayout';
 import ArticleListEntry from 'component:ArticleListEntry.astro';
+import contentSummaries from '../../config.mjs';
 
 export async function getStaticPaths() {
   let params = [];
   let articlesForTag = {};
 
-  const articles = Astro.fetchContent('../**/*.md');
+  const articles = contentSummaries;
   const taggedArticles = articles.filter(
     (article) => article.tags !== undefined
   );

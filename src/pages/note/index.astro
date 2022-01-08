@@ -3,8 +3,9 @@
 
 import SectionIndex from 'layout:SectionIndex';
 import NoteCard from 'component:NoteCard.astro';
+import contentSummaries from '../../config.mjs';
 
-const allNotes = Astro.fetchContent('./**/*.md');
+const allNotes = contentSummaries.filter(contentSummary => contentSummary.section === "note");
 const recentNotes = allNotes
     .sort((a, b) =>
         new Date(b.date).valueOf() - new Date(a.date).valueOf()

@@ -2,14 +2,16 @@
 import BaseLayout from 'layout:BaseLayout';
 import NoteCard from 'component:NoteCard.astro';
 import PostCard from 'component:PostCard.astro';
+import contentSummaries from '../config.mjs';
 
-const latestNote = Astro.fetchContent('./note/**/*.md')
+const latestNote = contentSummaries
+    .filter(contentSummary => contentSummary.section === "note")
     .sort((a, b) =>
         new Date(b.date).valueOf() - new Date(a.date).valueOf()
     )[0];
 
-const allPosts = Astro.fetchContent('./post/**/*.md');
-const recentPosts = allPosts
+const recentPosts = contentSummaries
+    .filter(contentSummary => contentSummary.section === "post")
     .sort((a, b) =>
         new Date(b.date).valueOf() - new Date(a.date).valueOf()
     )
