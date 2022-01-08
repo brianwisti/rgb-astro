@@ -9,7 +9,7 @@ const { content } = Astro.props;
     <header slot="article-header">
         <h1>{content.title}</h1>
         <p><DateStamp timestamp={ content.date } /></p>
-        <ArticleTags article={content} />
+        <ArticleTags tags={content.tags} />
     </header>
     <slot />
 </Article>

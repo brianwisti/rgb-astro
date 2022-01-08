@@ -7,12 +7,12 @@ const { article } = Astro.props;
 ---
 <div>
     <h3>
-        <a href={ article.url }>{ article.title }</a>
+        <a href={ article.href }>{ article.title }</a>
     </h3>
     <p><DateStamp timestamp={ article.date } /></p>
     <slot />
     <footer>
-      <ArticleTags article={article} />
+      <ArticleTags tags={article.tags} />
     </footer>
 </div>
 
