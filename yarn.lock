@@ -402,11 +402,6 @@
     estree-walker "^2.0.1"
     picomatch "^2.2.2"
 
-"@small-tech/jsdb@^2.0.6":
-  version "2.0.6"
-  resolved "https://registry.yarnpkg.com/@small-tech/jsdb/-/jsdb-2.0.6.tgz#da71722b9f8edf76363134c24bb10eb8c8416893"
-  integrity sha512-++siizNYJXOaxxPkuLDxzvqYLVMwz4ryjIUNbxoAKyEpmRcS6ZLyRjX4rYbMyx1aBQkMzxFIa86rHwrMl3KnuA==
-
 "@sveltejs/vite-plugin-svelte@1.0.0-next.30":
   version "1.0.0-next.30"
   resolved "https://registry.yarnpkg.com/@sveltejs/vite-plugin-svelte/-/vite-plugin-svelte-1.0.0-next.30.tgz#a6cd181bb406d590c1fa8d480c55950d567689f9"

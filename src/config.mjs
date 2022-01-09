@@ -6,12 +6,6 @@ import matter from "gray-matter";
 // NOTES:
 //  - requires a restart when content files are changed
 //  - assumes POSIX path separators
-//
-// if I put this in src/config.mjs:
-//
-//  node_modules/@small-tech/jsdb/lib/JSTable.js:17:23: \
-//    error: Could not resolve "fs/promises"            \
-//    (use "platform: 'node'" when building for node)
 
 const loadContentSummaries = async () => {
     console.log("Loading content summaries");
