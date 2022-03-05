@@ -1,0 +1,28 @@
+---
+import BaseLayout from 'layout:BaseLayout';
+import CoverImage from "component:CoverImage.astro";
+import { Markdown } from 'astro/components';
+
+const { content } = Astro.props;
+---
+<BaseLayout content={content}>
+    <article>
+        <header>
+            <h1 set:html={ content.title } />
+            {(content.cover_image !== undefined) ?
+              <CoverImage cover_image={content.cover_image} />
+              : ""}
+            <slot name="article-meta" />
+        </header>
+        <Markdown>
+            <slot />
+        </Markdown>
+    </article>
+</BaseLayout>
+
+<style>
+    article {
+        max-width: min(100%, 68ch);
+        margin: auto;
+    }
+</style>

@@ -8,6 +8,9 @@ tags:
 - ssg
 - site
 layout: layout:PublishedArticle
+cover_image:
+  path: /img/note/2021/12/i-got-astro-working/cover.png
+  caption: Screenshot of a page built with Astro
 ---
 
 [Astro][]'s great once you get started. A bit funky if you have twenty years of

@@ -50,6 +50,6 @@ let content = {
 }
 ---
 <BaseLayout content={content}>
-  <h1>{ content.title }</h1>
+  <h1 set:text={ content.title } />
   {articles.map((article) => <ArticleListEntry article={article} />)}
 </BaseLayout>

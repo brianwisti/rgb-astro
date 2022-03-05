@@ -2,8 +2,9 @@
 /*** Render a tag as a link to a list of tagged articles */
 
 const { tag } = Astro.props;
+const tagHref = `/tag/${ tag }`;
 ---
-<a href="/tag/${ tag }">{ tag }</a>
+<a href={ tagHref } set:html={ tag } />
 
 <style>
 a::before {

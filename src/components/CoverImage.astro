@@ -1,0 +1,24 @@
+---
+const { cover_image } = Astro.props;
+---
+<figure>
+  <a href={cover_image.path}>
+    <img src={cover_image.path} alt={cover_image.caption} />
+  </a>
+  <figcaption set:html={cover_image.caption} />
+</figure>
+
+<style>
+  figure {
+    width: 100%;
+  }
+
+  figcaption {
+    text-align: right;
+  }
+
+  img {
+    max-width: 100%;
+    margin: auto;
+  }
+</style>

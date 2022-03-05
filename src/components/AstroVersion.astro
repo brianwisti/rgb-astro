@@ -17,5 +17,5 @@ async function readVersionFromPackage() {
 const astroVersion = await readVersionFromPackage();
 ---
 <span>
-    <a href="https://astro.build">Astro</a> version { astroVersion }
+    <a href="https://astro.build">Astro</a> version <span class="astro-version" set:text={ astroVersion } />
 </span>

@@ -7,7 +7,7 @@ const { article } = Astro.props;
 ---
 <div>
     <h3>
-        <a href={ article.href }>{ article.title }</a>
+        <a href={ article.href } set:html={ article.title } />
     </h3>
     <p><DateStamp timestamp={ article.date } /></p>
     <slot />

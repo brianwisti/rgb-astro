@@ -4,4 +4,4 @@
 const { timestamp } = Astro.props;
 const date = new Date(timestamp);
 ---
-<time datetime={ date.toISOString() }>{ date.toDateString() }</time>
+<time datetime={ date.toISOString() } set:html={date.toDateString()} />

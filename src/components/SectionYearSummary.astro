@@ -1,0 +1,9 @@
+---
+const { section, year, count } = Astro.props;
+const sectionYearPath = `/${ section }/${ year }/`;
+---
+<div>
+  <a href={sectionYearPath} set:html={ year }/>:
+    <span class="summary-count" set:html={ count } /> published
+  </a>
+</div>

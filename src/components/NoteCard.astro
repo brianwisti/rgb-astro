@@ -6,7 +6,5 @@ import { Markdown } from 'astro/components';
 const { note } = Astro.props;
 ---
 <Card article={ note }>
-  <Markdown>
-    { note.cardContent }
-  </Markdown>
+  <Markdown content={ note.cardContent } />
 </Card>

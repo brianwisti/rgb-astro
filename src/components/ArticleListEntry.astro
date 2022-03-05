@@ -11,10 +11,10 @@ const { article } = Astro.props;
   </div>
   <div class="article-details">
     <div>
-      <strong> <a href={ article.href }>{ article.title }</a> </strong>
+      <strong> <a href={ article.href } set:html={ article.title } /> </strong>
     </div>
     <div>
-      <a href="/${article.section}">{ article.section }</a>
+      <a href="/${article.section}" set:html={ article.section } />
     </div>
     <div>
       <ArticleTags article={article} />

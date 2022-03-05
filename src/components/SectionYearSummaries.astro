@@ -1,5 +1,6 @@
 ---
 import contentSummaries from '../config.mjs';
+import SectionYearSummary from 'component:SectionYearSummary.astro';
 
 /** Summarize all published years for a given section */
 
@@ -34,6 +35,8 @@ const yearSummaries = yearSummariesForSection(section);
 ---
 <div>
     {yearSummaries.map(({ year, count }) =>
-        <div><a href="/${ section }/${ year }/">{ year }</a>: { count } published</div>
-    )}
+      <SectionYearSummary
+        section={ section }
+        year={ year.toString() }
+        count={ count.toString() } />)}
 </div>

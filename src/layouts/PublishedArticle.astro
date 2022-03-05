@@ -1,15 +1,14 @@
 ---
-import Article from 'layout:Article';
+import MarkdownArticle from 'layout:MarkdownArticle';
 import DateStamp from 'component:DateStamp.astro';
 import ArticleTags from 'component:ArticleTags.astro';
 
 const { content } = Astro.props;
 ---
-<Article content={content}>
-    <header slot="article-header">
-        <h1>{content.title}</h1>
-        <p><DateStamp timestamp={ content.date } /></p>
-        <ArticleTags tags={content.tags} />
-    </header>
+<MarkdownArticle content={content}>
+    <section slot="article-meta">
+      <p><DateStamp timestamp={ content.date } /></p>
+      <ArticleTags tags={content.tags} />
+    </section>
     <slot />
-</Article>
+</MarkdownArticle>
